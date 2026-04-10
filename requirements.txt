@@ -1,0 +1,18 @@
+# ViralGen AI - Marketing Architect
+# Python Dependencies
+
+# Web Framework
+streamlit>=1.28.0
+
+# HTTP Client
+requests>=2.31.0
+
+# JSON Processing (built-in)
+# No additional dependencies needed
+
+# Optional: For enhanced UI components
+# pillow>=10.0.0
+
+# Development/Testing
+# pytest>=7.4.0
+# pytest-cov>=4.1.0

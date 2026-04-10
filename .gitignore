@@ -1,0 +1,52 @@
+# ViralGen AI - Setup & Deployment
+
+## Local Development Setup
+
+```bash
+# 1. Clone the repository
+git clone <repository-url>
+cd viralgen_ai
+
+# 2. Create virtual environment
+python -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
+
+# 3. Install dependencies
+pip install -r requirements.txt
+
+# 4. Configure API credentials
+# Option A: Use the sidebar in the app
+# Option B: Create .streamlit/secrets.toml
+mkdir -p .streamlit
+cat > .streamlit/secrets.toml << EOF
+[secrets]
+MINIMAX_API_KEY = "your_api_key_here"
+MINIMAX_GROUP_ID = "your_group_id_here"
+EOF
+
+# 5. Run the application
+streamlit run app.py
+```
+
+## Deployment to Streamlit Cloud
+
+1. Push your code to GitHub
+2. Go to [share.streamlit.io](https://share.streamlit.io)
+3. Connect your GitHub repository
+4. Deploy!
+
+### Required Files for Deployment
+- `app.py` - Main application
+- `requirements.txt` - Dependencies
+- `utils/` - Utility modules
+- `.streamlit/secrets.toml` - Configuration template
+
+## Environment Variables (Alternative)
+
+You can also use environment variables:
+
+```bash
+export MINIMAX_API_KEY="your_api_key"
+export MINIMAX_GROUP_ID="your_group_id"
+streamlit run app.py
+```
