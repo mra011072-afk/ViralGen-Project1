@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <defs>
+    <linearGradient id="glow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFD700;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FFA500;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <circle cx="100" cy="100" r="95" fill="#0D0D0D" stroke="url(#glow)" stroke-width="4"/>
+  
+  <path d="M100,30 L115,70 L155,75 L125,105 L135,145 L100,125 L65,145 L75,105 L45,75 L85,70 Z" 
+        fill="url(#glow)" 
+        stroke="#FFD700" 
+        stroke-width="2" 
+        stroke-linejoin="round"/>
+  
+  <text x="100" y="115" font-family="Arial, sans-serif" font-size="60" font-weight="bold" fill="#0D0D0D" text-anchor="middle">VG</text>
+  
+  <text x="100" y="170" font-family="Verdana, sans-serif" font-size="20" font-weight="bold" fill="url(#glow)" text-anchor="middle" letter-spacing="2">VIRALGEN AI</text>
+</svg>
